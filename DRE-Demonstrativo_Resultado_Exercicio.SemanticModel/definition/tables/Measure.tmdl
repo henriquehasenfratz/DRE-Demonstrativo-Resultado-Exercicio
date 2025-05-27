@@ -1,0 +1,125 @@
+table Measure
+	lineageTag: 58a618e8-999a-417d-8ffa-4253fc6a887a
+
+	measure mDREAnalitico = ```
+			
+			 
+			 
+			 SUM(fLancamentos[Valor])
+			```
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 2fc6b916-a239-4640-bb60-17aa9f6d0426
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure mReceitaBruta =
+			
+			
+			CALCULATE(
+			    [mDREAnalitico],
+			    FILTER(
+			        ALL(dDre[CodGrupoDRE]),
+			        dDre[CodGrupoDRE] = 1
+			        ),
+			        ALL(dDre)
+			)
+		lineageTag: 0f12e7b8-2582-4678-9865-422d52be3905
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure mDre_subtotal =
+			
+			
+			CALCULATE(
+			    [mDREAnalitico],
+			    dDre[CodGrupoDRE] <= MAX(dDre[CodGrupoDRE]),
+			    all(dDre)
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: fe39a364-7147-4bab-8d1a-1fad3182042f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure mDRE = ```
+			
+			
+			var vtipo = SELECTEDVALUE(dDre[Tipo])
+			var vcod = SELECTEDVALUE(dDre[CodGrupoDRE])
+			
+			var vresultado = 
+			
+			SWITCH(
+			    TRUE(),
+			    vtipo = "A", [mDREAnalitico],
+			    vtipo = "ST", [mDre_subtotal],
+			    vtipo = "PCT" && vcod = 16, [mLucroLiquido(%)],
+			    vtipo = "PCT" && vcod = 7, [mMargemContribuicao(%)],
+			    BLANK()
+			)
+			
+			RETURN
+			vresultado
+			```
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: a4da016b-c431-49ac-b973-6b3ad6d67b18
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure mMargemContribuicao(%) = ```
+			
+			
+			var vMC = 
+			CALCULATE(
+			    [mDre_subtotal],
+			    dDre[CodGrupoDRE] = 6,
+			    ALL(dDre)
+			)
+			
+			RETURN
+			FORMAT(
+			    DIVIDE(
+			    vMC,[mReceitaBruta],0),"0%")
+			```
+		lineageTag: 6395095e-1872-4f46-a31f-a440c623debd
+
+	measure mLucroLiquido(%) = ```
+			
+			
+			var vLL = 
+			CALCULATE(
+			    [mDre_subtotal],
+			    dDre[CodGrupoDRE] = 15,
+			    ALL(dDre)
+			)
+			
+			RETURN
+			format(
+			    DIVIDE(
+			    vLL,[mReceitaBruta],0),"0%")
+			```
+		lineageTag: cdc8056b-401d-48ed-9ede-c8f2223b8151
+
+	column Column1
+		dataType: string
+		isHidden
+		lineageTag: e502b01b-8b7a-4993-8580-d06738d7e10f
+		summarizeBy: none
+		sourceColumn: Column1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Measure = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

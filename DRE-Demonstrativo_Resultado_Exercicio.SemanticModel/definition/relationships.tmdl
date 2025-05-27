@@ -1,0 +1,12 @@
+relationship AutoDetected_149ce1f5-9607-4e2d-86f5-634c5cf241f9
+	fromColumn: dPlanoContas.CodGrupoDRE
+	toColumn: dDre.CodGrupoDRE
+
+relationship 4596fad3-7b82-ed44-2e07-3083de43693d
+	fromColumn: fLancamentos.'Data do Movimento'
+	toColumn: dCalendario.Date
+
+relationship 17f0015f-3f09-dcd3-60e0-b5aef88c9e23
+	fromColumn: fLancamentos.CodConta
+	toColumn: dPlanoContas.CodContaContabil
+

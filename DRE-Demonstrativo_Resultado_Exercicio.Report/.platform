@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "DRE-Demonstrativo_Resultado_Exercicio"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "869bff27-bb75-4c30-90b1-af6231d0a42d"
+  }
+}

@@ -1,0 +1,64 @@
+table fLancamentos
+	lineageTag: 95ad1316-651e-4d99-9d46-a6ae1e7e4e6b
+
+	column 'Data do Movimento'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6bd7f588-330b-4f0f-a7ba-d6a1cbb81a67
+		summarizeBy: none
+		sourceColumn: Data do Movimento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CodConta
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c44918b-f46d-4a46-9196-99ba9cc0f416
+		summarizeBy: none
+		sourceColumn: CodConta
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo do Lancamento'
+		dataType: string
+		lineageTag: dc7c8605-8b88-4172-8349-0097d2096e42
+		summarizeBy: none
+		sourceColumn: Tipo do Lancamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Valor
+		dataType: double
+		lineageTag: c0a4cdde-3e77-46a3-a256-6ed155a81fd0
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fLancamentos = m
+		mode: import
+		queryGroup: Fato
+		source =
+				let
+				    Source = BaseDados,
+				    #"Added Custom" = Table.AddColumn(Source, "Conteudo", each Excel.Workbook([Content])),
+				    #"Filtered Rows2" = Table.SelectRows(#"Added Custom", each ([Name] <> "Mascara DRE.xlsx" and [Name] <> "Plano de Contas.xlsx")),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Filtered Rows2",{"Conteudo"}),
+				    #"Expanded Conteudo" = Table.ExpandTableColumn(#"Removed Other Columns", "Conteudo", {"Name", "Data", "Item", "Kind", "Hidden"}, {"Name", "Data", "Item", "Kind", "Hidden"}),
+				    #"Filtered Rows" = Table.SelectRows(#"Expanded Conteudo", each ([Kind] = "Sheet")),
+				    #"Removed Other Columns1" = Table.SelectColumns(#"Filtered Rows",{"Data"}),
+				    #"Expanded Data" = Table.ExpandTableColumn(#"Removed Other Columns1", "Data", {"Column1", "Column2", "Column3", "Column4"}, {"Column1", "Column2", "Column3", "Column4"}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Expanded Data", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Data do Movimento", type date}, {"CodConta", Int64.Type}, {"Tipo do Lancamento", type text}, {"Valor", type number}}),
+				    #"Filtered Rows1" = Table.SelectRows(#"Changed Type", each ([Tipo do Lancamento] <> "Tipo do Lancamento"))
+				in
+				    #"Filtered Rows1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,8 @@
+expression Caminho_pasta = "C:\Users\jhase\Documents\PROJETOS\DRE\Desafio" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=false]
+	lineageTag: 91c4c119-36ba-4acd-9860-e100270c6e16
+	queryGroup: Aux
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

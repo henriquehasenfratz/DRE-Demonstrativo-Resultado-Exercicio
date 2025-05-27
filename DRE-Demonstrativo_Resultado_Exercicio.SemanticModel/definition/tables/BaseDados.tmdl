@@ -1,0 +1,87 @@
+table BaseDados
+	isHidden
+	lineageTag: abcd0e69-9750-4551-ae0b-b68376f039a3
+
+	column Name
+		dataType: string
+		isHidden
+		lineageTag: 8d46809a-e26e-44b8-aef6-80ea67db674d
+		summarizeBy: none
+		sourceColumn: Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Extension
+		dataType: string
+		isHidden
+		lineageTag: 38ec5726-b77c-4556-ac39-e101d02aee15
+		summarizeBy: none
+		sourceColumn: Extension
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date accessed'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: ddd81d17-12c2-496c-a202-115be943423e
+		summarizeBy: none
+		sourceColumn: Date accessed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date modified'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 76e18890-54fb-4680-972a-24ac9665d87c
+		summarizeBy: none
+		sourceColumn: Date modified
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date created'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 508ee932-f2a0-477c-a787-006d7f491960
+		summarizeBy: none
+		sourceColumn: Date created
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Folder Path'
+		dataType: string
+		isHidden
+		lineageTag: f57bdae7-4a43-4695-b026-9e790ac9cda7
+		summarizeBy: none
+		sourceColumn: Folder Path
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition BaseDados = m
+		mode: import
+		source =
+				let
+				    Source = Folder.Files(Caminho_pasta)
+				in
+				    Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

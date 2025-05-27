@@ -1,0 +1,51 @@
+table dDre
+	lineageTag: 97dd4d31-716f-4acf-a237-c06b72e21749
+
+	column CodGrupoDRE
+		dataType: int64
+		formatString: 0
+		lineageTag: 0d604fd1-e3d7-4db1-89fa-38b44f89e827
+		summarizeBy: none
+		sourceColumn: CodGrupoDRE
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContaGerencial
+		dataType: string
+		lineageTag: ea2498f4-9a0e-4317-b95e-7413e88b73d3
+		summarizeBy: none
+		sourceColumn: ContaGerencial
+		sortByColumn: CodGrupoDRE
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: b64896c8-3ed6-4fe8-932d-7ad64d367499
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dDre = m
+		mode: import
+		queryGroup: Dados
+		source =
+				let
+				    Source = BaseDados,
+				    #"C:\Users\jhase\Documents\PROJETOS\DRE\Desafio\_Mascara DRE xlsx" = Source{[#"Folder Path"="C:\Users\jhase\Documents\PROJETOS\DRE\Desafio\",Name="Mascara DRE.xlsx"]}[Content],
+				    #"Imported Excel Workbook" = Excel.Workbook(#"C:\Users\jhase\Documents\PROJETOS\DRE\Desafio\_Mascara DRE xlsx"),
+				    Planilha1_Sheet = #"Imported Excel Workbook"{[Item="Planilha1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"CodGrupoDRE", Int64.Type}, {"ContaGerencial", type text}, {"Tipo", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "DRE-Demonstrativo_Resultado_Exercicio"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a8648b69-72cc-404c-bd14-db493c7d5982"
+  }
+}

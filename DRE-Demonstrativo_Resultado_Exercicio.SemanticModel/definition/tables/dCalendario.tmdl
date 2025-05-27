@@ -1,0 +1,41 @@
+table dCalendario
+	lineageTag: c3cdf529-edf8-4aea-a3da-fc71dddb280c
+
+	column Date
+		formatString: Short Date
+		lineageTag: b1e1b76f-a41f-4a65-ac17-602172a0a530
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR(dCalendario[Date])
+		formatString: 0
+		lineageTag: 09334148-3818-4cfc-bc9d-a3b08d99c365
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = MONTH(dCalendario[Date])
+		formatString: 0
+		lineageTag: 8392343b-380d-4acc-977e-8eed8731bcb6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameMonth = FORMAT(dCalendario[Date],"MMM")
+		lineageTag: 1bf6fe0d-53d4-4d8e-b157-2f7064bfcb55
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source =
+				CALENDAR(
+				    FIRSTDATE(fLancamentos[Data do Movimento]),
+				    LASTDATE(fLancamentos[Data do Movimento]))
+
+	annotation PBI_Id = 9349230c2087483aa13c3091d4be1a93
+

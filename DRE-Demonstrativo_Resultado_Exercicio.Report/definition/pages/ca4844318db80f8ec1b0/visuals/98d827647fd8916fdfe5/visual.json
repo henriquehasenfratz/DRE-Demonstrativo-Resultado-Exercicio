@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "98d827647fd8916fdfe5",
+  "position": {
+    "x": 350.02518891687657,
+    "y": 147.80856423173802,
+    "z": 0,
+    "height": 394.45843828715363,
+    "width": 655.617128463476,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dDre"
+                    }
+                  },
+                  "Property": "ContaGerencial"
+                }
+              },
+              "queryRef": "dDre.ContaGerencial",
+              "nativeQueryRef": "ContaGerencial"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure"
+                    }
+                  },
+                  "Property": "mDRE"
+                }
+              },
+              "queryRef": "Measure.mDRE",
+              "nativeQueryRef": "mDRE"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dDre"
+                  }
+                },
+                "Property": "ContaGerencial"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

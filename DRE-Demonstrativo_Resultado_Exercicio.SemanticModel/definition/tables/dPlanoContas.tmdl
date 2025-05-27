@@ -1,0 +1,51 @@
+table dPlanoContas
+	lineageTag: d14b7c73-db12-4e35-af3b-2544371a44f1
+
+	column CodGrupoDRE
+		dataType: int64
+		formatString: 0
+		lineageTag: 41c6c866-ae92-4a07-9353-e04bc4fa6332
+		summarizeBy: none
+		sourceColumn: CodGrupoDRE
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodContaContabil
+		dataType: int64
+		formatString: 0
+		lineageTag: 27fe3749-32fd-4568-919a-74de40cf814d
+		summarizeBy: none
+		sourceColumn: CodContaContabil
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContaContabil
+		dataType: string
+		lineageTag: 9dc0d722-9967-4bd4-a892-50f83a7f00ef
+		summarizeBy: none
+		sourceColumn: ContaContabil
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dPlanoContas = m
+		mode: import
+		queryGroup: Dados
+		source =
+				let
+				    Source = BaseDados,
+				    #"C:\Users\jhase\Documents\PROJETOS\DRE\Desafio\_Plano de Contas xlsx" = Source{[#"Folder Path"="C:\Users\jhase\Documents\PROJETOS\DRE\Desafio\",Name="Plano de Contas.xlsx"]}[Content],
+				    #"Imported Excel Workbook" = Excel.Workbook(#"C:\Users\jhase\Documents\PROJETOS\DRE\Desafio\_Plano de Contas xlsx"),
+				    Planilha1_Sheet = #"Imported Excel Workbook"{[Item="Planilha1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"CodGrupoDRE", Int64.Type}, {"CodContaContabil", Int64.Type}, {"ContaContabil", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
