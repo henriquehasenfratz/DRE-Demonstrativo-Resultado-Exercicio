@@ -5,6 +5,11 @@
       "name": "CY24SU10",
       "reportVersionAtImport": "5.64",
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "IPCR_Financeiro2539611184570396.json",
+      "reportVersionAtImport": "5.64",
+      "type": "RegisteredResources"
     }
   },
   "layoutOptimization": "None",
@@ -45,6 +50,22 @@
           "name": "CY24SU10",
           "path": "BaseThemes/CY24SU10.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "DRE15693783639153158.svg",
+          "path": "DRE15693783639153158.svg",
+          "type": "Image"
+        },
+        {
+          "name": "IPCR_Financeiro2539611184570396.json",
+          "path": "IPCR_Financeiro2539611184570396.json",
+          "type": "CustomTheme"
         }
       ]
     }

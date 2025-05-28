@@ -46,14 +46,15 @@ table Measure
 			var vtipo = SELECTEDVALUE(dDre[Tipo])
 			var vcod = SELECTEDVALUE(dDre[CodGrupoDRE])
 			
+			
 			var vresultado = 
 			
 			SWITCH(
 			    TRUE(),
 			    vtipo = "A", [mDREAnalitico],
-			    vtipo = "ST", [mDre_subtotal],
-			    vtipo = "PCT" && vcod = 16, [mLucroLiquido(%)],
-			    vtipo = "PCT" && vcod = 7, [mMargemContribuicao(%)],
+			    vtipo = "ST" && [mIsinscope] = FALSE(), [mDre_subtotal],
+			    vtipo = "PCT" && vcod = 16 && [mIsinscope] = FALSE() ,[mLucroLiquido(%)],
+			    vtipo = "PCT" && vcod = 7 && [mIsinscope] = FALSE() ,[mMargemContribuicao(%)],
 			    BLANK()
 			)
 			
@@ -98,6 +99,61 @@ table Measure
 			    vLL,[mReceitaBruta],0),"0%")
 			```
 		lineageTag: cdc8056b-401d-48ed-9ede-c8f2223b8151
+
+	measure mIsinscope = ISINSCOPE(dPlanoContas[ContaContabil])
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f44b8f29-0f00-476e-9031-5d7bd091d9fd
+
+	measure mLucroOperacional(%) = ```
+			
+			
+			var vLO = 
+			CALCULATE(
+			    [mDre_subtotal],
+			    dDre[CodGrupoDRE] = 10,
+			    ALL(dDre)
+			)
+			
+			RETURN
+			format(
+			    DIVIDE(
+			    vLO,[mReceitaBruta],0),"0%")
+			```
+		lineageTag: 4312067e-72a5-4fe8-befd-125acaec26d2
+
+	measure mAH =
+			
+			
+			var vLastMonth = CALCULATE([mDRE_AT],DATEADD(dCalendario[Date],-1,MONTH))
+			
+			RETURN
+			DIVIDE(
+			    [mDRE_AT]-vLastMonth,ABS(vLastMonth))
+		formatString: 0%;-0%;0%
+		lineageTag: 3190118c-67e0-4a9b-ab94-0e30a7197582
+
+	measure mDRE_AT = ```
+			
+			
+			var vtipo = SELECTEDVALUE(dDre[Tipo])
+			var vcod = SELECTEDVALUE(dDre[CodGrupoDRE])
+			
+			
+			var vresultado = 
+			
+			SWITCH(
+			    TRUE(),
+			    vtipo = "A", [mDREAnalitico],
+			    vtipo = "ST" && [mIsinscope] = FALSE(), [mDre_subtotal],
+			    BLANK()
+			)
+			
+			RETURN
+			vresultado
+			```
+		lineageTag: f759b1e2-f70d-4e6e-82ad-a6ab5e461db0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Column1
 		dataType: string

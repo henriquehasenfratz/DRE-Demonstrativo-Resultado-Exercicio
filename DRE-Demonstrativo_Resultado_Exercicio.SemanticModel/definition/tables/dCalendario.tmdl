@@ -27,6 +27,7 @@ table dCalendario
 	column NameMonth = FORMAT(dCalendario[Date],"MMM")
 		lineageTag: 1bf6fe0d-53d4-4d8e-b157-2f7064bfcb55
 		summarizeBy: none
+		sortByColumn: Month
 
 		annotation SummarizationSetBy = Automatic
 

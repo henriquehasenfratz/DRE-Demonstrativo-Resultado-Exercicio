@@ -2,8 +2,2347 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "base_dado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "base dado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BaseDados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dado": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "base_dado.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "base_dado.extension": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados",
+			          "ConceptualProperty": "Extension"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "extension": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "postponement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "leeway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "delay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "allowance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "addition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "conservatory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "porch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "lean-to": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "annex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "wing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "base_dado.date_accessed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados",
+			          "ConceptualProperty": "Date accessed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date accessed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment accessed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period accessed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "base_dado.date_modified": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados",
+			          "ConceptualProperty": "Date modified"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date modified": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment modified": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period modified": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "base_dado.date_created": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados",
+			          "ConceptualProperty": "Date created"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date created": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment created": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period created": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "base_dado.folder_path": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "BaseDados",
+			          "ConceptualProperty": "Folder Path"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "folder path": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "path": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "folder pathway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "folder footpath": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pathway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "footpath": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "folder trail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "folder track": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "folder route": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "track": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "route": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "f_lancamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fLancamentos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f lancamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fLancamentos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_lancamento.data_do_movimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fLancamentos",
+			          "ConceptualProperty": "Data do Movimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data do movimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record do movimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_lancamento.cod_conta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fLancamentos",
+			          "ConceptualProperty": "CodConta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod conta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodConta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_lancamento.tipo_do_lancamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fLancamentos",
+			          "ConceptualProperty": "Tipo do Lancamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo do lancamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_lancamento.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fLancamentos",
+			          "ConceptualProperty": "Valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "d_plano_conta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dPlanoContas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d plano conta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dPlanoContas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_plano_conta.cod_grupo_DRE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dPlanoContas",
+			          "ConceptualProperty": "CodGrupoDRE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod grupo DRE": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodGrupoDRE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_plano_conta.cod_conta_contabil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dPlanoContas",
+			          "ConceptualProperty": "CodContaContabil"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod conta contabil": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodContaContabil": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_plano_conta.conta_contabil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dPlanoContas",
+			          "ConceptualProperty": "ContaContabil"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "conta contabil": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ContaContabil": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_dre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dDre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d dre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dDre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_dre.cod_grupo_DRE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dDre",
+			          "ConceptualProperty": "CodGrupoDRE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod grupo DRE": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodGrupoDRE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_dre.conta_gerencial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dDre",
+			          "ConceptualProperty": "ContaGerencial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "conta gerencial": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ContaGerencial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_dre.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dDre",
+			          "ConceptualProperty": "Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dCalendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.name_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "NameMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NameMonth": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "name mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "nickname month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "title month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "label month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "tag month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measure.column_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "Column1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "column 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_DRE_analitico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mDREAnalitico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m DRE analitico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mDREAnalitico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_receita_bruta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mReceitaBruta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m receita bruta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mReceitaBruta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_dre_subtotal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mDre_subtotal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m dre subtotal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mDre_subtotal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_DRE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mDRE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m DRE": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mDRE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "DRE": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_margem_contribuicao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mMargemContribuicao(%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m margem contribuicao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "m margem contribuicao (%)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mMargemContribuicao(%)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "measure.m_lucro_liquido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mLucroLiquido(%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m lucro liquido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "m lucro liquido (%)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mLucroLiquido(%)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "measure.m_isinscope": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mIsinscope"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m isinscope": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mIsinscope": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_lucro_operacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mLucroOperacional(%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m lucro operacional": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "m lucro operacional (%)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mLucroOperacional(%)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "measure.m_AH": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mAH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m AH": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mAH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "AH": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "measure.m_DRE_AT": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure",
+			          "ConceptualProperty": "mDRE_AT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m DRE AT": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mDRE_AT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "DRE AT": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "d_plano_conta_has_d_dre": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoContas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "d_dre": {
+			          "Target": {
+			            "Entity": "d_dre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "d_dre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_d_dres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_dre"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_dres_have_d_plano_contas"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_d_plano_conta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_d_plano_contas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_f_lancamentos"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_lancamentos"
+			        }
+			      ]
+			    },
+			    "measure_has_m_DRE_AT": {
+			      "Binding": {
+			        "ConceptualEntity": "Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measure": {
+			          "Target": {
+			            "Entity": "measure"
+			          }
+			        },
+			        "measure.m_DRE_AT": {
+			          "Target": {
+			            "Entity": "measure.m_DRE_AT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure"
+			            },
+			            "Object": {
+			              "Role": "measure.m_DRE_AT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_have_m_DRE_AT"
+			        }
+			      ]
+			    },
+			    "measure_has_m_AH": {
+			      "Binding": {
+			        "ConceptualEntity": "Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measure": {
+			          "Target": {
+			            "Entity": "measure"
+			          }
+			        },
+			        "measure.m_AH": {
+			          "Target": {
+			            "Entity": "measure.m_AH"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure"
+			            },
+			            "Object": {
+			              "Role": "measure.m_AH"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_have_m_AH"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_measure_m_lucro_operacional": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "measure.m_lucro_operacional": {
+			          "Target": {
+			            "Entity": "measure.m_lucro_operacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "measure.m_lucro_operacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_m_lucro_operacional"
+			        }
+			      ]
+			    },
+			    "measure_has_m_isinscope": {
+			      "Binding": {
+			        "ConceptualEntity": "Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measure": {
+			          "Target": {
+			            "Entity": "measure"
+			          }
+			        },
+			        "measure.m_isinscope": {
+			          "Target": {
+			            "Entity": "measure.m_isinscope"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure"
+			            },
+			            "Object": {
+			              "Role": "measure.m_isinscope"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_have_m_isinscope"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_measure_m_lucro_liquido": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "measure.m_lucro_liquido": {
+			          "Target": {
+			            "Entity": "measure.m_lucro_liquido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "measure.m_lucro_liquido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_m_lucro_liquido"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_measure_m_margem_contribuicao": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "measure.m_margem_contribuicao": {
+			          "Target": {
+			            "Entity": "measure.m_margem_contribuicao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "measure.m_margem_contribuicao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_m_margem_contribuicao"
+			        }
+			      ]
+			    },
+			    "measure_has_m_DRE": {
+			      "Binding": {
+			        "ConceptualEntity": "Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measure": {
+			          "Target": {
+			            "Entity": "measure"
+			          }
+			        },
+			        "measure.m_DRE": {
+			          "Target": {
+			            "Entity": "measure.m_DRE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure"
+			            },
+			            "Object": {
+			              "Role": "measure.m_DRE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_have_m_DRE"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_measure_m_dre_subtotal": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "measure.m_dre_subtotal": {
+			          "Target": {
+			            "Entity": "measure.m_dre_subtotal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "measure.m_dre_subtotal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_m_dre_subtotal"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_measure_m_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "measure.m_receita_bruta": {
+			          "Target": {
+			            "Entity": "measure.m_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "measure.m_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_m_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_measure_m_DRE_analitico": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "measure.m_DRE_analitico": {
+			          "Target": {
+			            "Entity": "measure.m_DRE_analitico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "measure.m_DRE_analitico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_m_DRE_analitico"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_name_month": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.name_month": {
+			          "Target": {
+			            "Entity": "d_calendario.name_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.name_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_name_months"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.month": {
+			          "Target": {
+			            "Entity": "d_calendario.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_months"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.year": {
+			          "Target": {
+			            "Entity": "d_calendario.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_years"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.date": {
+			          "Target": {
+			            "Entity": "d_calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "d_dre_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "dDre"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_dre": {
+			          "Target": {
+			            "Entity": "d_dre"
+			          }
+			        },
+			        "d_dre.tipo": {
+			          "Target": {
+			            "Entity": "d_dre.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_dre"
+			            },
+			            "Object": {
+			              "Role": "d_dre.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_dres_have_tipos"
+			        }
+			      ]
+			    },
+			    "d_dre_has_conta_gerencial": {
+			      "Binding": {
+			        "ConceptualEntity": "dDre"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_dre": {
+			          "Target": {
+			            "Entity": "d_dre"
+			          }
+			        },
+			        "d_dre.conta_gerencial": {
+			          "Target": {
+			            "Entity": "d_dre.conta_gerencial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_dre"
+			            },
+			            "Object": {
+			              "Role": "d_dre.conta_gerencial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_dres_have_conta_gerencials"
+			        }
+			      ]
+			    },
+			    "d_dre_has_cod_grupo_DRE": {
+			      "Binding": {
+			        "ConceptualEntity": "dDre"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_dre": {
+			          "Target": {
+			            "Entity": "d_dre"
+			          }
+			        },
+			        "d_dre.cod_grupo_DRE": {
+			          "Target": {
+			            "Entity": "d_dre.cod_grupo_DRE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_dre"
+			            },
+			            "Object": {
+			              "Role": "d_dre.cod_grupo_DRE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_dres_have_cod_grupo_DREs"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_conta_contabil": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoContas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "d_plano_conta.conta_contabil": {
+			          "Target": {
+			            "Entity": "d_plano_conta.conta_contabil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta.conta_contabil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_conta_contabils"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_cod_conta_contabil": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoContas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "d_plano_conta.cod_conta_contabil": {
+			          "Target": {
+			            "Entity": "d_plano_conta.cod_conta_contabil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta.cod_conta_contabil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cod_conta_contabils"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "f_lancamento.valor": {
+			          "Target": {
+			            "Entity": "f_lancamento.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_valor"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_tipo_do_lancamento": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "f_lancamento.tipo_do_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento.tipo_do_lancamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento.tipo_do_lancamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_tipo_do_lancamentos"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_data_do_movimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "f_lancamento.data_do_movimento": {
+			          "Target": {
+			            "Entity": "f_lancamento.data_do_movimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento.data_do_movimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_data_do_movimentos"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 
