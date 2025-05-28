@@ -27,7 +27,7 @@ Perfect for professionals and students who want to understand how to build finan
 
 ## 🛠️ Tech Stack
 
-- [DRE]([https://app.powerbi.com/links/x3GhYCUBz4?ctid=fe78fb83-0010-419e-9548-8a21551e9c1a&pbi_source=linkShare](https://app.powerbi.com/view?r=eyJrIjoiOTlkNmIxODgtMDc5Zi00Mzg2LTgyNjMtYWEwMDRmMDdkNTBlIiwidCI6ImZlNzhmYjgzLTAwMTAtNDE5ZS05NTQ4LThhMjE1NTFlOWMxYSJ9))
+- [DRE](https://app.powerbi.com/view?r=eyJrIjoiOTlkNmIxODgtMDc5Zi00Mzg2LTgyNjMtYWEwMDRmMDdkNTBlIiwidCI6ImZlNzhmYjgzLTAwMTAtNDE5ZS05NTQ4LThhMjE1NTFlOWMxYSJ9)
 - DAX (Data Analysis Expressions)
 - Star schema data modeling
 - Git/GitHub for version control
